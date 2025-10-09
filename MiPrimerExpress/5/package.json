@@ -1,0 +1,22 @@
+{
+  "name": "api-noticias-mexico",
+  "version": "1.0.0",
+  "description": "API para gestionar noticias, siguiendo las especificaciones del curso.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "noticias"
+  ],
+  "author": "Navitron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.15.2",
+    "sequelize": "^6.37.7"
+  }
+}

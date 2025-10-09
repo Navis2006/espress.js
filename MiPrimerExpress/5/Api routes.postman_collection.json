@@ -1,0 +1,1077 @@
+{
+	"info": {
+		"_postman_id": "f7682148-2eca-45bf-a71c-bc577ccc3f5c",
+		"name": "Api routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49097449",
+		"_collection_link": "https://navitron69-2142251.postman.co/workspace/navitron69's-Workspace~54cfe81a-3e98-458f-88ea-895131ff6504/collection/49097449-f7682148-2eca-45bf-a71c-bc577ccc3f5c?action=share&source=collection_link&creator=49097449"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Política\",\r\n    \"descripcion\": \"Noticias sobre el gobierno y la política mexicana.\"\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f7-Nxo+RRbFaJsIdqEJGcKFCYaHYfI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:45:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categorías obtenidas correctamente\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Deportes\",\n            \"descripcion\": \"Noticias sobre el mundo deportivo\",\n            \"activo\": true\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"Tecnología\",\n            \"descripcion\": \"Avances y noticias de tecnología\",\n            \"activo\": true\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Política\",\r\n    \"descripcion\": \"Noticias sobre el gobierno y la política mexicana.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Política\",\r\n    \"descripcion\": \"Noticias sobre el gobierno y la política mexicana.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca-Akx0Qdo9yCBnuYtDgMtLM2AurX4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:46:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categoría creada exitosamente\",\n    \"data\": {\n        \"id\": 3,\n        \"nombre\": \"Política\",\n        \"descripcion\": \"Noticias sobre el gobierno y la política mexicana.\",\n        \"activo\": true,\n        \"FechaAlta\": \"2025-10-09T16:46:41.541Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categories/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categories",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Muertos\",\r\n    \"descripcion\": \"Noticias sobre fallecimientos y obituarios.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ec-LRSQS96673tuPmDbYreBgIsSlhY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:46:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categoría actualizada correctamente\",\n    \"data\": {\n        \"id\": 3,\n        \"nombre\": \"Muertos\",\n        \"descripcion\": \"Noticias sobre fallecimientos y obituarios.\",\n        \"activo\": true,\n        \"FechaAlta\": \"2025-10-09T16:46:41.541Z\",\n        \"FechaMod\": \"2025-10-09T16:46:52.470Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Política\",\r\n    \"descripcion\": \"Noticias sobre el gobierno y la política mexicana.\"\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "426"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1aa-hqOjj926xctxZV9hCCIN07DjSQE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:47:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Categorías obtenidas correctamente\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Deportes\",\n            \"descripcion\": \"Noticias sobre el mundo deportivo\",\n            \"activo\": true\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"Tecnología\",\n            \"descripcion\": \"Avances y noticias de tecnología\",\n            \"activo\": true\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"Muertos\",\n            \"descripcion\": \"Noticias sobre fallecimientos y obituarios.\",\n            \"activo\": true,\n            \"FechaAlta\": \"2025-10-09T16:46:41.541Z\",\n            \"FechaMod\": \"2025-10-09T16:46:52.470Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/news/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/news",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"news"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "548"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"224-EuT/gTk+P/LVgJ4UiRre+X2liaI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:47:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Noticias obtenidas correctamente\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"categoria_id\": 1,\n            \"estado_id\": 1,\n            \"usuario_id\": 1,\n            \"titulo\": \"Muertossss\",\n            \"fecha_publicacion\": \"2023-10-26\",\n            \"description\": \"muertossss\",\n            \"activo\": true,\n            \"FechaMod\": \"2025-10-09T16:21:27.973Z\"\n        },\n        {\n            \"id\": 2,\n            \"categoria_id\": 2,\n            \"estado_id\": 2,\n            \"usuario_id\": 2,\n            \"titulo\": \"Noticia de ejemplo 2\",\n            \"fecha_publicacion\": \"2023-10-27\",\n            \"description\": \"Descripción de la noticia 2\",\n            \"activo\": true\n        },\n        {\n            \"id\": 3,\n            \"titulo\": \"Muertos\",\n            \"description\": \"Muertos\",\n            \"activo\": true,\n            \"UserAlta\": \"System\",\n            \"FechaAlta\": \"2025-10-09T16:20:26.185Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\":\"Muertos\",\r\n    \"description\":\"Muertos\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/news",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"news"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-mOb6KjsLnimiXL/OS1RSuyMUbjE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:47:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Noticia creada exitosamente\",\n    \"data\": {\n        \"id\": 4,\n        \"titulo\": \"Muertos\",\n        \"description\": \"Muertos\",\n        \"activo\": true,\n        \"UserAlta\": \"System\",\n        \"FechaAlta\": \"2025-10-09T16:47:36.818Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\":\"Muertossss\",\r\n    \"description\":\"muertossss\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/news/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"news",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-imV9LNvDr2J3u9GOZDP47BWYYT4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:47:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Noticia actualizada correctamente\",\n    \"data\": {\n        \"id\": 1,\n        \"categoria_id\": 1,\n        \"estado_id\": 1,\n        \"usuario_id\": 1,\n        \"titulo\": \"Muertossss\",\n        \"fecha_publicacion\": \"2023-10-26\",\n        \"description\": \"muertossss\",\n        \"activo\": true,\n        \"FechaMod\": \"2025-10-09T16:47:50.940Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "states",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/states",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"states"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-yYiST+e7R0q/r9BokwaEl3ehqR0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:48:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Estados obtenidos correctamente\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Yucatán\",\n            \"abreviacion\": \"YUC\",\n            \"activo\": true\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"yucat\",\n            \"abreviacion\": \"yuct\",\n            \"activo\": true\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"Yucatann\",\n            \"abreviacion\": \"YUCA\",\n            \"activo\": true\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"Yucatann\",\r\n    \"abreviacion\":\"YUCA\",\r\n    \"activo\":\"true\"\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/states",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"states"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "111"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6f-NUTtBH2Sj2turHAxnFEdVfrN8CY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:48:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Estado creado exitosamente\",\n    \"data\": {\n        \"id\": 4,\n        \"nombre\": \"Yucatann\",\n        \"abreviacion\": \"YUCA\",\n        \"activo\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\":\"yucat\",\r\n    \"abreviacion\":\"yuct\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/states/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"states",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "114"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"72-96ukHxcbrxMj7AIB9dFpk3xiFz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:48:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Estado actualizado correctamente\",\n    \"data\": {\n        \"id\": 2,\n        \"nombre\": \"yucat\",\n        \"abreviacion\": \"yuct\",\n        \"activo\": true\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "385"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"181-JSzLetS9TMvwYj3OpML/KthR1qE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:48:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"profile_id\": 1,\n            \"nombres\": \"Admin\",\n            \"apellidos\": \"User\",\n            \"nick\": \"admin\",\n            \"correo\": \"admin@example.com\",\n            \"activo\": true\n        },\n        {\n            \"id\": 2,\n            \"profile_id\": 2,\n            \"nombres\": \"Juan\",\n            \"apellidos\": \"Perez\",\n            \"nick\": \"JuanP\",\n            \"correo\": \"juan@example.com\",\n            \"activo\": true\n        },\n        {\n            \"id\": 3,\n            \"profile_id\": 2,\n            \"activo\": true\n        },\n        {\n            \"id\": 4,\n            \"profile_id\": 2,\n            \"nombres\": \"Nava\",\n            \"apellidos\": \"Naav\",\n            \"correo\": \"nava@gmail.com\",\n            \"activo\": true\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombres\":\"Nava\",\r\n    \"apellidos\":\"Naav\",\r\n    \"correo\":\"nava@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "135"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"87-pxnAjTibE7kchU3RuLfqBg3dWl0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:49:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Usuario creado\",\n    \"data\": {\n        \"id\": 5,\n        \"profile_id\": 2,\n        \"nombres\": \"Nava\",\n        \"apellidos\": \"Naav\",\n        \"correo\": \"nava@gmail.com\",\n        \"activo\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombres\":\"navitron\",\r\n    \"apellidos\":\"navavava\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "108"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6c-tZ1YTAb40s/oLiLrjjoXJU7q1bc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:49:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 4,\n        \"profile_id\": 2,\n        \"nombres\": \"Nava\",\n        \"apellidos\": \"Naav\",\n        \"correo\": \"nava@gmail.com\",\n        \"activo\": true\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"correo\": \"admin@example.com\",\r\n    \"contraseña\":\"admin123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "147"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"93-wjb644FiBZQk4XQY3ju53Vf6XKo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Oct 2025 16:39:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login exitoso\",\n    \"token\": \"este_es_un_token_de_simulacion_jwt\",\n    \"user\": {\n        \"id\": 1,\n        \"nick\": \"admin\",\n        \"correo\": \"admin@example.com\",\n        \"profile_id\": 1\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
